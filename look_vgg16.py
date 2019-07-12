@@ -7,7 +7,7 @@ class Vgg16():
         if vgg16_path is None:
             vgg16_path = os.path.join(os.getcwd(), "vgg_weight/vgg16.npy")
             self.data_dict = np.load(vgg16_path, encoding='latin1').item()
-            print(self.data_dict['conv1_1']['weights'])
+            print(self.data_dict)
         for x in self.data_dict:
             print(x)
 
