@@ -15,6 +15,7 @@ def load_image(path):  # 预处理图片，显示每次处理效果
     img = io.imread(path)
     img = img / 255.0  # 像素归一化
 
+    # 一行三列
     ax0 = fig.add_subplot(131)
     ax0.set_xlabel(u'Original Picture')
     ax0.imshow(img)
